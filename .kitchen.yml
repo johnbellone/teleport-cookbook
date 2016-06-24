@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+  config:
+    linked_clone: true
+  customize:
+    cpus: 2
+    memory: 2048
+provisioner:
+  name: chef_zero
+platforms:
+  - name: ubuntu-16.04
+    named_run_list: ubuntu
+  - name: ubuntu-14.04
+    named_run_list: ubuntu
+  - name: ubuntu-12.04
+    named_run_list: ubuntu
+  - name: centos-7.2
+    named_run_list: redhat
+  - name: centos-6.7
+    named_run_list: redhat
+  - name: centos-5.11
+    named_run_list: redhat
+suites:
+  - name: default

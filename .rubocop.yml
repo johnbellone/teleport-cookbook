@@ -1,0 +1,8 @@
+---
+AllCops:
+  Exclude:
+    - 'Guardfile'
+    - 'Rakefile'
+    - 'test/**/*'
+    - 'bin/**'
+    - 'vendor/**/*'
